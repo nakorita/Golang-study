@@ -23,7 +23,7 @@ func (s Square) Area() float64 {
 }
 
 func (t Triangle) Area() float64 {
-	return t.width * t.height
+	return t.width * t.height / 2
 }
 
 func main() {
@@ -49,7 +49,7 @@ func main() {
 	// 관련있다. 라고 해주지 않아도 알아서 찾는다.
 	f := make([]Figure, 0)
 	f = append(f, Square{3, 4})
-	f = append(f, Square{4, 5})
+	f = append(f, Triangle{4, 5})
 	for i, value := range f {
 		fmt.Println("인덱스번호: ", i, value.Area())
 	}
