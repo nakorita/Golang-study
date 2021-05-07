@@ -21,10 +21,12 @@ func AbsFunc(v Vertex) float64 {
 
 func main() {
 	v := Vertex{3, 4}
+	fmt.Println("v확인: ", v)
 	fmt.Println(v.Abs())
 	fmt.Println(AbsFunc(v))
 
 	p := &Vertex{4, 3}
+	fmt.Println("p확인: ", p)
 	fmt.Println(p.Abs())
 	fmt.Println(AbsFunc(*p))
 }

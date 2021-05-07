@@ -25,7 +25,7 @@ func main() {
 	v.Scale(2)
 	fmt.Println(v)
 	ScaleFunc(&v, 10)
-	fmt.Println(v, "\n")
+	fmt.Println(v)
 
 	// p라는 변수에 Vertex{4,3}의 주소를 가리키는 포인터
 	p := &Vertex{4, 3}
@@ -33,7 +33,7 @@ func main() {
 	p.Scale(3)
 	fmt.Println(p)
 	ScaleFunc(p, 8)
-	fmt.Println(p, "\n")
+	fmt.Println(p)
 
 	fmt.Println(v, p)
 }
